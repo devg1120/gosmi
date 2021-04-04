@@ -128,8 +128,7 @@ func Init() error {
 		if debug {
 			fmt.Printf("Loaded module %s\n", moduleName)
 		}
-//		modules[i] = moduleName
-                _ = i
+		modules[i] = moduleName
 	}
 
 	if debug {
