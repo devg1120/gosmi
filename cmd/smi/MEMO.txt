@@ -1,0 +1,4 @@
+./main -m SNMPv2-MIB -p ../../mibs/vendor_mibs/
+./main -m SNMPv2-MIB -p ../../mibs/vendor_mibs/ 1.3.6.1.6.3.1.2.2.10
+./main -m CISCO-PRODUCTS-MIB -p ../../mibs/vendor_mibs/
+./main -m CISCO-PRODUCTS-MIB -p ../../mibs/vendor_mibs/ 1.3.6.1.4.1.9.1.1753
