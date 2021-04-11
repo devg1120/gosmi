@@ -168,12 +168,14 @@ func Subtree(oid string) {
 
 	subtree := node.GetSubtree()
 
-	jsonBytes, _ := json.Marshal(subtree)
-	fmt.Printf("\n")
-	os.Stdout.Write(jsonBytes)
-	fmt.Printf("\n")
-	fmt.Printf("\n")
+	//jsonBytes, _ := json.Marshal(subtree)
+	//fmt.Printf("\n")
+	//os.Stdout.Write(jsonBytes)
+	//fmt.Printf("\n")
+	//fmt.Printf("\n")
 
+	i, _ := json.MarshalIndent(subtree, "","  ")
+        fmt.Println(string(i), "\n")
 	//fmt.Printf("%s\n",reflect.TypeOf(jsonBytes))
         fmt.Printf("subtree TypeOf: %s\n",reflect.TypeOf(subtree))
         fmt.Printf("subtree Kind  : %s\n",reflect.TypeOf(subtree).Kind())
